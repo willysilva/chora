@@ -13,7 +13,7 @@ Features
 Installation
 
 npm install chora
-# or
+or
 yarn add chora
 
 (Adjust package name if you publish under a different name.)
@@ -80,58 +80,10 @@ my-app/
 ├─ tsconfig.json
 └─ ...
 
-If you’re developing Chora itself, a simplified structure is:
-
-chora/
-├─ src/
-│  ├─ components/
-│  │  ├─ SimpleExpert.ts
-│  │  ├─ SimpleExpertise.ts
-│  │  └─ SimpleSupervisor.ts
-│  ├─ Chora.ts
-│  ├─ index.ts
-│  └─ types.ts
-├─ tests/
-│  └─ ...
-├─ package.json
-├─ tsconfig.json
-├─ README.md
-└─ ...
 
 Scripts
 
-If you’re developing Chora itself, you might have scripts like:
-
-{
-  "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "lint": "eslint . --ext .ts --max-warnings=0",
-    "prepare": "npm run build"
-  }
-}
-
-	•	build: Compiles TypeScript into JavaScript.
-	•	test: Runs your test suite (using Jest or another framework).
-	•	lint: Ensures consistent code style.
-	•	prepare: Automatically builds before publishing to npm.
-
-Advanced Usage
-	•	Custom Expert Selection
-You can create your own function to choose an expert (e.g., pick the one with the best “confidence score”).
-	•	Multiple Supervisors
-You can have layered supervisors that handle different aspects of domain selection, or fallback logic if the first supervisor doesn’t find a match.
-	•	Checklists / Pre-Processors
-Insert additional checks before choosing an expertise (e.g., user authentication, data validation).
-	•	Plugins & Extensions
-Add specialized experts (e.g., DatabaseExpert, OpenAIExpert) that do external API calls or advanced computations.
-
-Contributing
-	1.	Fork this repo and clone it locally.
-	2.	Create a feature branch for your changes.
-	3.	Commit your work (git commit -m "Add new feature").
-	4.	Open a Pull Request (PR) on the main repo.
-
+	
 All contributions are welcome!
 
 License
