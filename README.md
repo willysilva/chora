@@ -1,0 +1,2 @@
+# chora
+Chat Orchestration Architecture
